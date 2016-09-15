@@ -10,7 +10,6 @@ with open("/usr/share/dict/words") as words_list:
         letter_count += 1
     print ("You have 8 guesses to figure out the computer's hidden word")
     print ("This is how many letters the word contains:", letter_count)
-    print (computer_word)
     blanks = list("_" * len(computer_word))
     guesses = 8
     bad_guesses = []
