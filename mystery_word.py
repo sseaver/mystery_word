@@ -47,11 +47,12 @@ def hangman_game():
             alphabet.remove(guess)
         else:
             print ("Invalid guess")
+# fix adding invalid response added to bad guesses
         if guess in computer_word:
             print ("Well done! That letter is in the word")
         else:
             print ("That letter is not in the word")
-            if guess not in bad_guesses:
+            if guess not in bad_guesses and guess in alphabet:
                 bad_guesses.append(guess)
                 guesses -= 1
         print ("You have {} guesses remaining".format(guesses))
