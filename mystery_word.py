@@ -52,7 +52,7 @@ def hangman_game():
             print ("Well done! That letter is in the word")
         else:
             print ("That letter is not in the word")
-            if guess not in bad_guesses and guess in alphabet:
+            if guess not in bad_guesses:
                 bad_guesses.append(guess)
                 guesses -= 1
             else:
