@@ -55,6 +55,8 @@ def hangman_game():
             if guess not in bad_guesses and guess in alphabet:
                 bad_guesses.append(guess)
                 guesses -= 1
+            else:
+                print ("Invalid guess")
         print ("You have {} guesses remaining".format(guesses))
 
 
